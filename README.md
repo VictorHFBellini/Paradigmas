@@ -23,6 +23,6 @@
 - [X] Armazenar códigos utilizados em aula.
 - [X] Melhor organização.
 - [X] Pode ser utilizado para revisão de provas.
-
+- [X] Dicas de Programação.
 
 ---
