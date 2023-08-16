@@ -26,3 +26,12 @@
 - [X] Dicas de Programação.
 
 ---
+
+<table align='center'>
+
+  <tr>
+    <td align="center"><a href="https://github.com/VictorHFBellini"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/128325102?v=4" width="100px;" alt="foto Victor"/><br /><sub><b>Victor H. Bellini</b></sub></a><br/>
+    </td>
+  </tr>
+
+</table>
