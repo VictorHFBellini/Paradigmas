@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Introdução JS</title>
+
+    <script type="text/javascript"> //Implementação JS
+      //Toda implementação deve ficar entre as tags "script"
+      var nome = 'Cuxtela';
+      console.log(nome); //exibe o valor no console
+
+      nome = 'Bruno';
+      console.log(nome);
+
+      //Tipos primitivos
+      var meuNome = 'Victor'; //String
+      var idade = '18'; //Números
+      var estadoAprovação = true; //Bool
+      var documento = undefined; //Undefined
+      var sobrenome = null; //Null (Vazio)
+
+      //Arrays
+      var vetor = [2, 13, 435, 12, 33, 21];
+      var frase = ['a', 'V', 'Y', 'j', 'p', 'V', 'Y', 'j'];
+
+      console.log(vetor)
+      console.log(frase[1])
+
+       // For no JavaScript
+      for (var i = 0; i <= 8; i ++)
+        {
+          //console.log(frase[i])
+          //print(frase[i]); // Emite o Print do Navegador
+          document.write(frase[i]);
+        }
+      
+
+       //Multidimencional (matriz)
+      var m = [
+        [12, 1124, 22, 23, 111],
+        [98, 123, 2323, 1111, 231],
+        [2, 66, 654, 67, 11],
+        [90, 938, 342, 524, 324],
+        [15, 166, 167, 168, 243]
+      ];
+      console.log(m[3][1]); // 938
+      console.log(m[2][3])
+
+      // DESAFIO 1
+      // Apresentar todos os valores da matriz (utilizar console.log)
+
+      for (var l = 0; l <= 4; l ++) //Variável da Linha (l)
+        {
+        for (var c = 0; c <= 4; c ++) //Variável da Coluna (c)
+          {
+            console.log(m[l][c])
+          }
+        }
+       
+    </script>
+  </head>
+
+  <body>
+    Vitim Cuxtela
+  </body>
+</html>
