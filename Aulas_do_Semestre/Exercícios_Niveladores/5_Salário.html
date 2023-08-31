@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salário</title>
+
+  <script type="text/javascript">
+    var salario;
+    var novoSalario;
+
+    salario = parseFloat(prompt('Por favor, insira o seu salário mensal: '));
+
+    if (salario < 800){
+      novoSalario = salario * 0.08
+      document.write('Seu novo salário é de: ', (salario + novoSalario));
+    } else {
+        novoSalario = salario * 0.04
+        document.write('Seu novo salário é de: ', (salario + novoSalario)); 
+      }
+
+  </script>
+</head>
+<body>
+    
+</body>
+</html>
