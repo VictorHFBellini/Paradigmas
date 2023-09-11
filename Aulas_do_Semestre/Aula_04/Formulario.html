@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+
+  </style>
+</head>
+<body>
+
+  <form>
+    <p>
+      <label>Nome:</label>
+      <input type="text" name="nome" />
+    </p>
+
+    <p>
+      <label>Usuário:</label>
+      <input type="text" name="usuario"/>
+    </p>
+    
+    <p>
+      <label>Senha:</label>
+      <input type="password" name="senha" />
+    </p>
+
+    <p>
+      <label>Endereço:</label>
+      <input type="text" name="endereço" size="35" />
+    </p>
+
+    <p>
+      <label>Cidade</label>
+      <input type="text" name="cidade" placeholder="Sua cidade" />
+    </p>
+
+    <p>
+      <label>Qtd.Filhos</label>
+      <input type="text" name="filho" maxlength="2" />
+    </p>
+
+    <p>
+      <label>Time</label><br>
+      <input type="radio" name="time" value="Porco"/> Palmeiras <br>
+      <input type="radio" name="time" value="Porco"/> Fogo <br>
+      <input type="radio" name="time" value="Porco"/> Vasco <br>
+    </p>
+
+    <p>
+      <label>Esporte Preferido</label> <br>
+      <input type="checkbox" name="esporte" value="basquete" checked /> Basquete <br>
+      <input type="checkbox" name="esporte" value="futebol" /> Futebol <br>
+      <input type="checkbox" name="esporte" value="comer" /> Comer <br>
+      <input type="checkbox" name="esporte" value="musculacao" /> Musculação <br>
+      <input type="checkbox" name="esporte" value="volei" /> Volei <br>
+    </p>
+
+    <p>
+      <label>S=v+t</label>
+      <select name="sabor">
+        <option selected>...</option>
+        <option>Banana</option>
+        <option>Ceu azul</option>
+        <option>Milho Verde</option>
+        <option>Murucuja</option>
+      </select>
+    </p>
+
+    <hr />
+
+    <p>
+      <textarea cols="40" rows="5" name="comentario">Valor padrão preenchido</textarea>
+    </p>
+
+    <p>
+      <input type="reset"/> <!-- redefinir -->
+      <input type="submit" value="Concluir resposta"/>
+    </p>
+  </form>
+
+</body>
+</html>
