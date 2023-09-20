@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codidificação - Bubble</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+  function BubbleSort() {
+    var tempoStart = performance.now();
+
+    var elementos = [10, 11, 25, 9, 1, 0, 12, 16, 44, 19];
+
+    var temp; // Tempo Auxiliar
+
+    // Varreduras
+    for (var i = 0; i < elementos.length - 1; i ++){
+      // Avaliar cada item
+      for (var ordem = 0; ordem < elementos.length - 1; ordem++){
+        if(elementos[ordem] > elementos[ordem + 1])
+        { // Efetuar a troca    
+          let temp = elementos[ordem];
+          elementos[ordem] = elementos[ordem + 1];
+          elementos[ordem + 1] = temp;
+        }
+      }
+    }
+
+    var tempoEnd = performance.now();
+
+    console.log("Tempo de Execução: " + (tempoEnd - tempoStart));
+
+    console.log("Total de Varreduras: " + i);
+  }
+
+  function BubbleSortOtimizado() {
+    // Exercício:
+    // Finalizar quando não existir nenhuma troca.
+    // Comando que pode ser utilizado para interromper a execução de laço: "break"
+
+    var tempoStart = performance.now();
+
+    var Trocou = false;
+
+    var elementos = [10, 11, 25, 9, 1, 0, 12, 16, 44, 19];
+    var temp; // Variável Auxiliar
+
+    // Varreduras
+    for (var i = 0; i < elementos.length - 1; i ++){
+    // Avaliar cada item
+    Trocou = false;
+      for (var ordem = 0; ordem < elementos.length - 1; ordem++){
+        if(elementos[ordem] > elementos[ordem + 1])
+        { // Efetuar a troca    
+          let temp = elementos[ordem];
+          elementos[ordem] = elementos[ordem + 1];
+          elementos[ordem + 1] = temp;
+
+          Trocou = true;
+        }
+      }
+      if(!Trocou)
+        break;
+    }
+
+    var tempoEnd = performance.now();
+
+    console.log("Tempo de Execução: " + (tempoEnd - tempoStart));
+
+    console.log("Total de Varreduras: " + i);
+  }
+
+  </script>
+</body>
+</html>
